@@ -39,6 +39,8 @@ user    0m3.328s
 sys     0m0.024s
 ```
 Which is about 300 times worse in javascript.
+(A second of the time might be `node` loading,
+etc, but the majority of the time is in SignPKCS1v15.)
 Maybe we can do better.
 It's this bad in-browser too, which affects things like
 macgyver's ChromeStorageBackend
