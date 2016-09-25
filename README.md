@@ -1,5 +1,6 @@
 
-This is a demo for a gopherjs speed issue.
+This is a demo for a gopherjs speed issue.  `SignPKCS1v15` is far slower
+in gopherjs.
 
 ### To build:
 
@@ -45,6 +46,10 @@ https://github.com/stripe/macgyver
 
 ### To test with a different RSA key
 
+The demo key size is 2048 bits.
+
 If you want to generate different keys (e.g. different sizes)
 for testing, go into `makekeyforspeedtest`, edit `main.go`, and
-`go run main.go`.
+`go run main.go`.  Then copy the contents of
+`makekeyforspeedtest/key.pem` into the
+value of `keyfile` in `speedtest/main.go`.
