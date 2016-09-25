@@ -7,16 +7,20 @@ If you need to install gopherjs, then
 `go get -u github.com/gopherjs/gopherjs`.
 
 Then
-`cd speedtest`
-`go build`
-`gopherjs build`
+```
+cd speedtest
+go build
+gopherjs build
+```
 
 ### To test speed:
 
 in `speedtest`, after building,
 
-`time ./speedtest`
-`time node speedtest.js`
+```
+time ./speedtest
+time node speedtest.js
+```
 
 My results on an Intel i5-2500 CPU:
 
